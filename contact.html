@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="Author" content="Krishanu Chatterjee">
+    <meta name="Description" content="A simple landing page for showcasing AR/VR product.">
+    <title>Oculus VR Headsets</title>
+    <link rel="icon" href="tabicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="forcontact.css">
+</head>
+<body>
+    <header>
+        <marquee>The website is currently under construction and in testing phase.....</marquee>
+        <div id="topmostsection">
+            <ul>
+                <li>🚚Free worldwide delivery</li>
+                <li>💲Worry-free trial</li>
+                <li>🌟Warranty</li>
+            </ul>    
+        </div>
+        <div class="flex-header">
+            <div id="image"><img src="mainlogo.png" height="129" width="164" alt="Oculus (By Meta)" title="Oculus (By Meta)"></div>
+            <div id="link-1"><a href="index.html">Return to Home</a></div>
+            <div id="link-2"><a href="quest1.html">Oculus Quest 1</a></div>
+            <div id="contact"><a href="contact.html">Contact us</a></div>
+        </div>
+    </header>
+
+    <h1>Contact-Details</h1>
+    <div class="contact-flex-container">
+        <div class="contact-info">
+            <ul>
+                <li>📧 E-Mail address: <a href="mailto:abc.123@gmail.com">ocu.help@meta.com</a></li>
+                <li>📞 Phone: <a href="tel:+919988776655">9123746123</a></li>
+                <li>🗺️ Address: <a href="https://maps.app.goo.gl/niWWBadJXaUkinym9">Directions to Customer-Care centre</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+                <p id="confirmationMessage" style="display:none; color: lightgreen; margin-top: 10px;">✅ Thank you! Your message has been received.</p>
+            </form>
+        </div>
+    </div> <!-- End of contact-flex-container -->
+
+    <!-- ✅ Footer placed outside the flexbox -->
+    <footer>
+        <div style="text-align:center; margin-top: 30px;">
+            <img src="tabicon.png" height="100" width="100" alt="Oculus Logo"><br>
+            <p>&copy; Oculus (By Meta)</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            this.reset();
+            document.getElementById("confirmationMessage").style.display = "block";
+        });
+    </script>
+</body>
+</html>

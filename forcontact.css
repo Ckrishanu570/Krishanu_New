@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+#topmostsection ul {
+    background-color: rgb(27, 27, 27);
+    list-style-type: none;
+    text-align: center;
+}
+
+#topmostsection li {
+    color: white;
+    display: inline;
+    margin-inline: 10px;
+}
+
+.flex-header {
+    margin: 6px;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-header > #imamge, #link-1, #link-2, #contact {
+    background-color: black;
+    width: 190px;
+    margin: 20px;
+    height: 133px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+}
+
+#link-1 a,
+#link-2 a,
+#contact a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    margin: 10px;
+    background-color: rgb(27, 27, 27);
+}
+
+/* New styles for contact form layout */
+.contact-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form button {
+    background-color: #555;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #777;
+}
+
+footer{
+    margin:10px;
+    background-color: rgb(27, 27, 27);
+}
